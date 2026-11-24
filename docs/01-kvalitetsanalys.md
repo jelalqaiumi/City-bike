@@ -54,15 +54,15 @@ Motivering: För att lägga till en ny stad måste man ändra koden på tolv st�
 
 ## 2. De fyra viktigaste egenskaperna för CityBike
 
-1. Safety: om laddningen inte stängs av när batteriet blir för varmt kan det börja brinna och folk kan skadas, se K8 och [R-nummer, avsnitt X].
+1. Safety: om laddningen inte stängs av när batteriet blir för varmt kan det börja brinna och folk kan skadas, se K8 och avsnitt 7. CityBike räknas som tillverkare av styrenheten och har därför ansvaret om något händer.
 
-2. Security: kunder kan se varandras resor och var de har åkt, se K5 och [R-nummer, avsnitt X], vilket kan ge skadestånd och sanktionsavgift enligt GDPR.
-
-
-3. Functional suitability: om kunder får betala dubbelt tappar de förtroendet och CityBike måste betala tillbaka, se K2 och [avsnitt X].
+2. Security: kunder kan se varandras resor och var de har åkt, se K5. Enligt R2 i avsnitt 6 sparas alla positioner tills vidare, så det går att se exakt var någon har åkt. Det kan ge skadestånd och sanktionsavgift enligt GDPR.
 
 
-4. Reliability: om resor och positioner försvinner när täckningen bryts blir priset fel och cyklarna går inte att hitta, se K3 och [avsnitt X].
+3. Functional suitability: om kunder får betala dubbelt tappar de förtroendet och CityBike måste betala tillbaka, se K2 och prisreglerna P1 till P3 i avsnitt 2.
+
+
+4. Reliability: om resor och positioner försvinner när täckningen bryts blir priset fel och cyklarna går inte att hitta, se K3 och avsnitt 4 där styrenheten skickar position var 15:e sekund.
 
 ## 3. Mätbara krav
 
