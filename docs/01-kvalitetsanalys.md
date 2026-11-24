@@ -71,27 +71,27 @@ Krav: När batteriet går över 60 °C ska laddningen stängas av inom 5 sekunde
 Mått: tid från att temperaturen går över 60 °C tills laddningen är avstängd och larmet har kommit fram 
 Gränsvärde: 5 sekunder för avstängning, 60 sekunder för larm 
 Mätmetod: test där vi låtsas att temperaturgivaren visar över 60 °C, 50 gånger, och kollar tidsstämplarna 
-Hänvisning: K8
+Hänvisning: K8, avsnitt 7
 
 ### Krav 2: 
 Krav: Om en inloggad kund försöker öppna någon annans resa genom att byta id ska 0 av 1 000 försök visa resan, svaret ska vara HTTP 403 eller 404. 
 Mått: antal försök där en annan kunds resa visas 
 Gränsvärde: 0 av 1 000 
 Mätmetod: automatiskt test mot API:et med två testkonton 
-Hänvisning: K5
+Hänvisning: K5 avsnitt 5 (tabellerna Trips och GpsPoints) och R2 i avsnitt 6
 
 ### Krav 3: 
 Krav: Om samma betalning skickas 2 till 5 gånger inom 10 minuter ska kunden bara dras pengar 1 gång, i alla 500 testfall. 
 Mått: antal dragningar per resa 
 Gränsvärde: 1 dragning per resa, 0 dubbla av 500 Mätmetod: integrationstest som skickar samma betalning flera gånger mot betaltjänstens testläge 
-Hänvisning: K2
+Hänvisning: K2, avsnitt 2 och avsnitt 4
 
 
 ### Krav 4: 
 Krav: Efter ett avbrott i täckningen på upp till 30 minuter ska minst 99,9 procent av positionerna komma fram till servern inom 2 minuter efter att uppkopplingen är tillbaka. Mått: andel positioner som kommer fram och hur lång tid det tar 
 Gränsvärde: minst 99,9 procent inom 2 minuter 
 Mätmetod: test där vi stänger av mobilnätet i 5, 15 och 30 minuter under en resa och jämför med serverns logg 
-Hänvisning: K3
+Hänvisning: K3, avsnitt 4 och avsnitt 7
 
 ### Tillgänglighet 99,7 procent
 30 dagar = 720 timmar = 43 200 minuter Nedtid som är tillåten = 0,3 procent av 43 200 = 0,003 × 43 200 = 129,6 minuter Svar: max 129,6 minuter nedtid på 30 dagar, ungefär 2 timmar och 10 minuter.
